@@ -1,0 +1,414 @@
+@font-face {
+	font-family: 'Sansation'; 
+	src: url(/web-site/Fonts/Sansation/Sansation-Regular.ttf); 
+}
+
+@font-face {
+	font-family: 'Sansation bold'; 
+	src: url(/web-site/Fonts/Sansation/Sansation-Bold.ttf); 
+}
+
+body {
+    background-color: #312F2A;
+    font-family: Sansation;
+    font-size: 90%;
+    margin: 0;
+    color: #312f2a;
+}
+
+html {
+    scrollbar-color: #00000058 #312F2A;
+    
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+header a {
+    color: rgba(49, 47, 42, 0.5);
+}
+
+footer a {
+    color: #FFF1E6;
+    opacity: 90%
+}
+
+
+
+header {
+    background-color: #FFF1E6;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+    .label {
+        margin-right: 4%;
+        margin-left: 10px;
+        font-size: 30px;
+        font-weight: bold;
+        color: rgba(49, 47, 42, 0.5);
+        width: 500px;
+        cursor: pointer;
+    }
+
+    .img_icon {
+        margin-left: 10%;
+        height: 52px;
+        width: 55px;
+        background-color: #ddbea9;
+        opacity: 71%;
+        cursor: pointer;
+
+        .img_icon_inner {opacity: 71%;}
+    }
+
+    .for_dogs, .for_cats, .for_other {
+        background-color: rgba(221, 190, 169, 0.71);
+        padding: 16px 23px;
+        margin: auto 3px;
+        color: rgba(49, 47, 42, 0.5);
+        font-size: 16px;
+        font-weight: bold;
+        height: 20px;
+    }
+
+    .for_dogs:hover, .for_cats:hover, .for_other:hover {
+        color:#312f2a9a;
+        background-color: #DDBEA9;
+        cursor: pointer;
+
+    }
+
+    .img_map, .img_call {margin: auto 2%;}
+
+}
+
+.main_services {
+    height: 70vh;
+    width: 180vh;
+    margin: 0;
+    background-color: #DDBEA9;
+    border-radius: 35px;
+    background: url(/web-site/imgs/Снимок\ экрана\ 2024-12-04\ 165130.png) no-repeat;
+    margin-bottom: 130px;
+}
+
+.maintext {
+    font-size: 60px;
+    font-family: Sansation bold;
+    opacity: 50%;
+    color: #FFF1E6;
+    margin-top: 2vh;
+    margin-left: 15vh;
+}
+
+.main_services_choose {
+
+    ul li {
+        display: inline;
+        padding-right: 19px;
+        border-radius: 4px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    /* для всех */
+    .for_dogs, .for_cats, .for_other { 
+        display: flex;
+        flex-direction: row;
+        margin-left: 20vh;
+        width: 40vh;
+
+
+        .inner_text {
+            height: 14vh;
+            width: 40vh;
+            background-color: #312f2a4b;
+            border-radius: 20px;
+        }
+
+        .inner_text_header {
+            font-size: 2.6vh;
+            padding-top: 12px;
+            padding-left: 35px;
+        }
+    }
+    /* отдельно */
+
+    .for_dogs, .for_other{
+        .inner_text {background-color:#312F2A;color: #fff1e6a3;}
+
+        .inner_text_header {color: #FFF1E6;}
+
+    }
+
+
+    .for_cats {
+
+        .inner_text {background-color:#FFF1E6;color:#312f2aa3;}
+
+        .inner_text_header {color:#312F2A;}
+
+        transform: translatex(40px) translatey(-14px);
+    }
+    .for_other {.inner_text {height: 10vh;} 
+        transform: translatex(85px) translatey(-28px);
+        width: 40vh;
+    }
+
+    /* смещение картинок */
+
+    .cat {transform: none;transform: translatex(270px) translateY(-92px);}
+
+    .container_dog {transform: translatex(-65px) translateY(-93px);}
+    .goose {transform: translatex(200px) translateY(-43px);}
+
+}
+
+.big_dog {height: 40vh; transform: translatex(1025px) translatey(-100px);}
+
+/* Второй сектор КОНТАКТЫ */
+
+.contacts_section {
+    height: 70vh;
+    width: 180vh;
+    margin: 0;
+    background-color: #DDBEA9;
+    border-radius: 35px;
+    background: url(/web-site/imgs/Снимок\ экрана\ 2024-12-04\ 171738.png) no-repeat;
+}
+
+.contacts_section {
+    display: flex;
+
+    .text {
+        font-size: 4.4vh;
+        font-family: Sansation bold;
+        opacity: 60%;
+        width: 49vh;
+    }
+    .phone_number {
+        background-color: #312F2A;
+        color: #FFF1E6;
+        font-size: 3vh;
+        margin-top: 2vh;
+        height: 5.3vh;
+        width: 35vh;
+        padding-left: 1.9vh;
+        padding-top: 2.3vh;
+        border-radius: 2vh;
+    }
+    #light {background-color: #FFF1E6;color: #312F2A;}
+
+    .contacts {margin-left: 17vh; margin-top: 15vh;
+    }
+
+    .map_block {
+        margin-left: 40vh;
+        margin-top: 15vh;
+
+        .map {
+            margin-top: 2vh;
+            display: flex;
+            justify-content: center;
+            width: 428px;
+            height: 307px;
+            border-radius: 4.4vh;
+            background-color: #312F2A;
+
+            iframe { padding-top: 1.4vh; border-radius: 3vh;}
+            
+        }
+        img {
+            height: 20vh;
+            transform: scalex(-1) translatex(184px) translatey(-93px);
+        }
+    }
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FFF1E6;
+    margin-top: 5vh;
+    padding-bottom: 0px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    height: 29vh;
+    width: 180vh;
+
+    grid-template-columns: 28% 25% 25%;
+    display: grid;
+    .text {size: 2vh; padding-top: 6px;}
+    #tg {height: 4.5vh;}
+    #vk {height: 4.5vh;}
+
+    .tg {display: flex; margin-left: 9vh; margin-top: 35px; justify-content: space-between; width: 120px; opacity: 80%}
+
+    .vk {display: flex; margin-top: 35px; justify-content: space-between; width: 120px; opacity: 80%}
+
+    ul {padding-left: 14px;}
+    li {opacity: 50%; list-style-type: none; margin-top: 8px;}
+    
+    .header_text {font-family: Sansation bold; font-size: 17px; margin-top: 35px; opacity: 80%}
+
+    .rights {
+        font-size: 13px;
+        opacity: 50%;
+        margin-left: 50px;
+        margin-bottom: 40px;
+    }
+
+    /* HOVERS */
+
+    .tg:hover, .vk:hover, .header_text:hover, li:hover {
+        opacity: 100%;
+        cursor: pointer;
+    }
+}
+
+.main_services_choose .for_dogs:hover, .for_other:hover{
+    .inner_text {background-color:#312f2ac8}
+    cursor: pointer;
+    
+}
+.main_services_choose .for_cats:hover{
+    .inner_text {background-color:#fff1e6c4}
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.modal-container {
+    background-color: #52525232;
+    height: 420px;
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    background-color: #FFF1E6;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 400px;
+    max-width: 100%;
+    text-align: center;
+    
+}
+
+.modal h2 {
+    margin-bottom: 0px;
+}
+
+.modal p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+.modal-container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+button {
+    background-color: rgb(164, 195, 164);
+    border-radius: 4px;
+    padding: 10px 15px;
+    border:#FFF1E6;
+    color: #312F2A;
+    font-family: Sansation;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+input {
+    background-color: #ebd6c7;
+    color:#312F2A;
+    font-family: Sansation;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    padding-left: 10px;  
+}
+
+::-webkit-input-placeholder {
+    color: #312F2A;
+    opacity: 60%;
+    padding-left: 2px;
+}
+
+.dropdown {
+    width: 191px;
+    margin-left: 106px;
+
+}
+.dropdown-button {
+    border: 1px solid #ccc;
+    cursor: pointer;
+
+    background-color: #ebd6c7;
+    color:#312f2a9c;
+    font-family: Sansation;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px #fff1e680 solid;
+    outline: none;
+    font-size: 16px;
+    margin: 0px;
+}
+/* Hide the Menu Items*/
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #ebd6c7;
+    color:#312f2a9c;
+    font-family: Sansation;
+    border-radius: 0px 0px 5px 5px;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    width: 191px;
+}
+.menu-item {
+    padding: 10px;
+    cursor: pointer;
+}
