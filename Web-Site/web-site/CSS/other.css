@@ -1,11 +1,11 @@
 @font-face {
 	font-family: 'Sansation'; 
-	src: url(/web-site/Fonts/Sansation/Sansation-Regular.ttf); 
+	src: url(/Fonts/Sansation/Sansation-Regular.ttf); 
 }
 
 @font-face {
 	font-family: 'Sansation bold'; 
-	src: url(/web-site/Fonts/Sansation/Sansation-Bold.ttf); 
+	src: url(/Fonts/Sansation/Sansation-Bold.ttf); 
 }
 
 body {
@@ -101,7 +101,7 @@ header {
     margin: 0;
     background-color: #DDBEA9;
     border-radius: 35px;
-    background: url(/web-site/imgs/Снимок\ экрана\ 2024-12-11\ 210056.png) no-repeat;
+    background: url(/imgs/Снимок\ экрана\ 2024-12-11\ 210056.png) no-repeat;
     margin-bottom: 130px;
 
     .main_services_choose {
